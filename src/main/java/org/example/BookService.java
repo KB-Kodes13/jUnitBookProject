@@ -7,6 +7,10 @@ import java.util.stream.Collectors;
 public class BookService {
     private List<Book> bookDatabase = new ArrayList<>(); // A list to simulate a book database
 
+    public void setBookDatabase(List<Book> bookDatabase) {
+        this.bookDatabase = bookDatabase;
+    }
+
     public List<Book> searchBook(String keyword) {
         // Search book by title, author, or genre
         return bookDatabase.stream()
